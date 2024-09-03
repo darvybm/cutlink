@@ -125,7 +125,7 @@ Here are the contributors to this project:
     </td>
     <td align="center">
       <a href="https://github.com/christpaul01">
-        <img src="https://github.com/christpaul01" width="100px;" alt="Christpaul01"/>
+        <img src="https://github.com/christpaul01.png" width="100px;" alt="Christpaul01"/>
         <br />
         <sub><b>Christpaul01</b></sub>
       </a>
