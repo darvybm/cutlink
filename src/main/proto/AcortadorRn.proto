@@ -1,0 +1,29 @@
+syntax="proto3";
+
+package acortadorrn;
+
+//Id del usuario
+message RequestUsuario {
+  string username = 1;
+}
+
+
+//Listado de Urls acortadas
+message ResponseUrls {
+  string jsonUrls = 1;
+}
+
+//Url Original
+message RequestUrl {
+  string UrlOriginal = 1;
+}
+
+//Url Acortada
+message ResponseUrl {
+  string jsonUrl = 1;
+}
+
+service AcortadorService{
+  rpc acortarUrl(RequestUrl) returns(ResponseUrl);
+  rpc getUrlsUsuario(RequestUsuario) returns (ResponseUrls);
+}

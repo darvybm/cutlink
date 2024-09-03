@@ -1,0 +1,115 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.google.protobuf' version '0.8.17'
+    id 'idea'
+}
+
+group 'edu.pucmm.eict'
+version '1.0-SNAPSHOT'
+
+mainClassName = 'edu.pucmm.eict.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    //Javalin
+    implementation 'io.javalin:javalin:5.3.2'
+
+    //Freemarker - Renderizado
+    implementation 'io.javalin:javalin-rendering:5.3.2'
+    implementation 'org.freemarker:freemarker:2.3.30'
+
+    //ORM - Hibernate.
+    implementation 'org.hibernate.orm:hibernate-core:6.0.2.Final'
+    implementation group: 'org.jasypt', name: 'jasypt', version: '1.9.3'
+
+    //H2
+    implementation 'com.h2database:h2:2.1.212'
+
+    //JDBC
+    implementation 'org.postgresql:postgresql:42.2.27'
+
+    //OTROS
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+    implementation "org.slf4j:slf4j-simple:2.0.5"
+    implementation 'org.jsoup:jsoup:1.15.3'
+    implementation group: 'com.maxmind.geoip2', name: 'geoip2', version: '4.0.1'
+    implementation group: 'eu.bitwalker', name: 'UserAgentUtils', version: '1.17'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.4.1'
+    implementation 'org.apache.cxf:cxf-rt-frontend-jaxws:3.4.5'
+    implementation group: 'org.eclipse.jetty', name: 'jetty-http-spi', version: '11.0.13'
+
+    //incluyendo las librerias de javax.ee en java 11.
+    //https://www.baeldung.com/java-soap-web-service
+    implementation "jakarta.servlet:jakarta.servlet-api:4.0.3"
+    implementation "jakarta.activation:jakarta.activation-api:1.2.2"
+    implementation "jakarta.xml.ws:jakarta.xml.ws-api:4.0.0"
+    implementation "jakarta.xml.soap:jakarta.xml.soap-api:3.0.0"
+    implementation "com.sun.xml.messaging.saaj:saaj-impl:2.0.1"
+    implementation "com.sun.xml.ws:jaxws-rt:3.0.2"
+
+    //Libreria para JWT
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+
+    //GRPC
+
+    implementation 'io.grpc:grpc-netty-shaded:1.39.0'
+    implementation 'io.grpc:grpc-protobuf:1.39.0'
+    compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
+    implementation 'com.google.protobuf:protobuf-java:3.17.3'
+    implementation("io.grpc:grpc-stub:1.40.1")
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+run {
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.17.3'
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.41.0'
+        }
+    }
+    generateProtoTasks {
+        all()*.plugins {
+            grpc {}
+        }
+    }
+    generatedFilesBaseDir = "$projectDir/generated"
+}
+
+clean {
+    delete protobuf.generatedFilesBaseDir
+}
+
+idea {
+    module {
+        // proto files and generated Java files are automatically added as
+        // source dirs.
+        // If you have additional sources, add them here:
+        sourceDirs += file("src/generated");
+    }
+}
+
+
+//Tareas para integrar con el
+clean {
+    delete protobuf.generatedFilesBaseDir
+}
