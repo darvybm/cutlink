@@ -12,11 +12,12 @@
 </p>
 
 # Cutlink
-Cutlink es una aplicación web diseñada para acortar URLs de manera rápida y sencilla, además de proporcionar estadísticas detalladas sobre el uso de cada enlace acortado. Con Cutlink, puedes gestionar tus enlaces, obtener valiosos insights sobre quién y cómo accede a ellos, y generar códigos QR para facilitar su distribución.
 
-La aplicación está desarrollada en Java utilizando el framework Javalin, lo que asegura un rendimiento óptimo y una experiencia de usuario fluida. Cutlink no solo ofrece una interfaz intuitiva para acortar URLs, sino que también incluye una serie de APIs (REST, gRPC y SOAP) para una integración flexible y el manejo avanzado de enlaces.
+**Cutlink** is a web application designed for quickly and easily shortening URLs while providing detailed statistics on each shortened link's usage. With **Cutlink**, you can manage your links, gain valuable insights into who and how they access them, and generate QR codes for easy distribution.
 
-Además de la funcionalidad de acortamiento de URLs, Cutlink proporciona herramientas avanzadas para aquellos que desean más control y análisis de sus enlaces, tales como estadísticas de clics, países de origen, navegadores utilizados, y más. También permite la generación y personalización de códigos QR para diversos propósitos, incluyendo enlaces web y configuraciones de redes Wi-Fi.
+The application is developed in Java using the Javalin framework, ensuring optimal performance and a smooth user experience. **Cutlink** not only offers an intuitive interface for shortening URLs but also includes a range of APIs (REST, gRPC, and SOAP) for flexible integration and advanced link management.
+
+In addition to URL shortening functionality, **Cutlink** provides advanced tools for those who seek more control and analysis of their links, such as click statistics, origin countries, browsers used, and more. It also allows for the generation and customization of QR codes for various purposes, including web links and Wi-Fi network configurations.
 
 ## Table of Contents
 - [Features](#features)
@@ -28,17 +29,17 @@ Además de la funcionalidad de acortamiento de URLs, Cutlink proporciona herrami
 - [Contact Me](#contact-me)
 
 ## Features
-- **Shorten URLs without registration:** Acorta URLs directamente desde la página de inicio sin necesidad de iniciar sesión.
-- **URL Management:** Crea, almacena y gestiona URLs acortadas en tu cuenta.
-- **Detailed Statistics:** Accede a estadísticas detalladas de tus URLs acortadas, incluyendo clics, países de origen, navegadores utilizados y más.
-- **QR Codes:** Genera códigos QR para URLs, páginas web, contraseñas de Wi-Fi, conexiones Wi-Fi, y más.
-- **Page Preview:** Visualiza una vista previa de la página a la que apunta el enlace acortado directamente desde la aplicación.
-- **REST API:** Proporciona endpoints para gestionar URLs acortadas, acceder a estadísticas, y más.
-- **gRPC API:** Ofrece una interfaz eficiente para la comunicación entre servicios internos.
-- **SOAP API:** Implementa un servicio SOAP para interoperabilidad con sistemas antiguos o que requieren este estándar.
-  
+- **Shorten URLs without registration:** Shorten URLs directly from the homepage without needing to sign in.
+- **URL Management:** Create, store, and manage shortened URLs in your account.
+- **Detailed Statistics:** Access detailed statistics of your shortened URLs, including clicks, origin countries, browsers used, and more.
+- **QR Codes:** Generate QR codes for URLs, web pages, Wi-Fi passwords, Wi-Fi connections, and more.
+- **Page Preview:** View a preview of the page that the shortened link points to directly from the application.
+- **REST API:** Provides endpoints for managing shortened URLs, accessing statistics, and more.
+- **gRPC API:** Offers an efficient interface for internal service communication.
+- **SOAP API:** Implements a SOAP service for interoperability with legacy systems or those requiring this standard.
+
 ## Application
-Aquí tienes algunas capturas de pantalla y GIFs que muestran la aplicación en acción:
+Here are some screenshots and GIFs showing the application in action:
 
 **Sign In and Register**
 <p align="left">
@@ -48,10 +49,14 @@ Aquí tienes algunas capturas de pantalla y GIFs que muestran la aplicación en 
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/Registrarse.gif" alt="Register" width="800"/>
 </p>
 
+These views allow users to access their account, manage their shortened URLs, and get detailed statistics on their usage. Registering on Cutlink offers the benefit of centralizing all activities related to shortened links, providing a more personalized and secure experience with access to a complete history of links and additional options such as customization and URL protection.
+
 **Home Section**
 <p align="left">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/HomeGif.gif" alt="Home" width="800"/>
 </p>
+
+In the Home section, you can see a summary of your shortened URLs, including the number of accesses, the number of times each one has been shared, the number of active links, and a map showing where the majority of accesses come from.
 
 **URLs Section**
 <p align="left">
@@ -61,15 +66,21 @@ Aquí tienes algunas capturas de pantalla y GIFs que muestran la aplicación en 
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/UrlCrearGif.gif" alt="Create URL" width="800"/>
 </p>
 
+In the URLs section, you can see all your shortened URLs in a list of cards providing information about the link's name, QR code, shortened URL, and original URL. To view the statistics for a URL, click the "View Summary" button to access detailed charts and information about all accesses.
+
 **Statistics Section**
 <p align="left">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/UrlDetallesGif.gif" alt="Statistics" width="800"/>
 </p>
 
+In the statistics section, you can view detailed information about the usage of your shortened URLs, including the number of clicks, the origin country of users, the browser they used, and much more.
+
 **QR Codes Section**
 <p align="left">
   <img src="https://github.com/user-attachments/assets/699eeca9-896e-4ba3-81f2-534524ae025f" alt="QR Codes" width="800"/>
 </p>
+
+In the QR Codes section, you can create a QR code for anything you need, including web pages, Wi-Fi passwords, or directly connecting to a Wi-Fi network. You can store files within the QR code and download them to export wherever you like.
 
 ## Tools Used
 - **Language:** Java ![Java](https://img.shields.io/badge/Language-Java-blue)
@@ -77,39 +88,39 @@ Aquí tienes algunas capturas de pantalla y GIFs que muestran la aplicación en 
 - **Frontend:** Freemarker, HTML, CSS, JavaScript, Bootstrap ![Freemarker](https://img.shields.io/badge/Frontend-Freemarker-lightgrey) ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
 - **Build Tool:** Gradle ![Gradle](https://img.shields.io/badge/Build%20Tool-Gradle-02303A?style=flat&logo=gradle&logoColor=white)
 - **Database:** H2 ![H2](https://img.shields.io/badge/Database-H2-blue)
-  
+
 ## How to Install
 
-Para ejecutar la aplicación, sigue estos pasos:
+To run the application, follow these steps:
 
 > [!IMPORTANT]  
-> **Requisitos:**
-> - **Java 17:** Asegúrate de tener Java 17 instalado en tu sistema.
-> - **Javalin 5.3.2:** Esto está incluido en el archivo `build.gradle` del proyecto, por lo que no necesitas instalarlo manualmente.
+> **Requirements:**
+> - **Java 17:** Make sure you have Java 17 installed on your system.
+> - **Javalin 5.3.2:** This is included in the `build.gradle` file of the project, so you don't need to install it manually.
 
-1. **Clona este repositorio:**
+1. **Clone this repository:**
     ```bash
     git clone https://github.com/darvybm/cutlink.git
     ```
 
-2. **Navega al directorio del proyecto:**
+2. **Navigate to the project directory:**
     ```bash
     cd cutlink
     ```
 
-3. **Configura las variables en `application.properties` si es necesario:** 
-   Aquí puedes personalizar ajustes como el puerto de la aplicación o la URL de la base de datos.
+3. **Configure the variables in `application.properties` if necessary:** 
+   Here you can customize settings like the application port or the database URL.
 
-4. **Ejecuta el proyecto utilizando tu IDE preferido o Gradle:**
+4. **Run the project using your preferred IDE or Gradle:**
     ```bash
     ./gradlew run
     ```
 
 > [!NOTE]  
-> En este proyecto, se utiliza la redirección donde la IP de la máquina se usa en lugar de `localhost`. Asegúrate de configurar la IP correctamente en tu entorno de desarrollo.
+> In this project, redirection is used where the machine's IP is used instead of `localhost`. Make sure to configure the IP correctly in your development environment.
 
 ## Contributors
-Aquí están los contribuyentes a este proyecto:
+Here are the contributors to this project:
 
 <table>
   <tr>
@@ -131,7 +142,7 @@ Aquí están los contribuyentes a este proyecto:
 </table>
 
 ## License
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact Me
 
