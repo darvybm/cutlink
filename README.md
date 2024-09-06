@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="https://github.com/user-attachments/assets/d99d9772-598f-4aeb-98b9-0e6c1b1dda40" alt="Header Image" width="400"/> 
+  <img src="https://github.com/user-attachments/assets/f0117e7c-44fe-431a-ae58-b3335ec3b89d" alt="Header Image" width="500"/> 
 </p> 
 
 <p align="center"> 
@@ -42,41 +42,41 @@ In addition to URL shortening functionality, **Cutlink** provides advanced tools
 Here are some screenshots and GIFs showing the application in action:
 
 **Sign In and Register**
-<p align="left">
+<p align="center">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/IniciarSesion.gif" alt="Sign In" width="800"/>
 </p>
-<p align="left">
+<p align="center">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/Registrarse.gif" alt="Register" width="800"/>
 </p>
 
 These views allow users to access their account, manage their shortened URLs, and get detailed statistics on their usage. Registering on Cutlink offers the benefit of centralizing all activities related to shortened links, providing a more personalized and secure experience with access to a complete history of links and additional options such as customization and URL protection.
 
 **Home Section**
-<p align="left">
+<p align="center">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/HomeGif.gif" alt="Home" width="800"/>
 </p>
 
 In the Home section, you can see a summary of your shortened URLs, including the number of accesses, the number of times each one has been shared, the number of active links, and a map showing where the majority of accesses come from.
 
 **URLs Section**
-<p align="left">
+<p align="center">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/UrlListaGif.gif" alt="URLs List" width="800"/>
 </p>
-<p align="left">
+<p align="center">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/UrlCrearGif.gif" alt="Create URL" width="800"/>
 </p>
 
 In the URLs section, you can see all your shortened URLs in a list of cards providing information about the link's name, QR code, shortened URL, and original URL. To view the statistics for a URL, click the "View Summary" button to access detailed charts and information about all accesses.
 
 **Statistics Section**
-<p align="left">
+<p align="center">
   <img src="https://github.com/darvybm/cutlink/blob/main/src/main/resources/publico/img/UrlDetallesGif.gif" alt="Statistics" width="800"/>
 </p>
 
 In the statistics section, you can view detailed information about the usage of your shortened URLs, including the number of clicks, the origin country of users, the browser they used, and much more.
 
 **QR Codes Section**
-<p align="left">
+<p align="center">
   <img src="https://github.com/user-attachments/assets/699eeca9-896e-4ba3-81f2-534524ae025f" alt="QR Codes" width="800"/>
 </p>
 
